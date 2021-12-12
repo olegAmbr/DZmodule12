@@ -10,11 +10,11 @@ public class Car extends Thread {
 
     @Override
     public void run() {
-        for (odometer = 0; odometer <= 10000; odometer += kmPerDay){
+        for (odometer = 0; odometer <= 10000; odometer += kmPerDay) {
             System.out.println("Машина в эксплуатации, пробег - " + odometer);
-            if (odometer >= 9500){
+            if (odometer >= 9500) {
                 System.out.println("Пробег - " + odometer + " Пора пройти ТО по пробегу");
             }
         }
-      }
+    }
 }
