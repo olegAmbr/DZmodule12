@@ -12,6 +12,9 @@ public class DaysToServise extends Thread {
             if (dts >= 350) {
                 System.out.println("До ТО - " + (365 - dts) + " дней.");
             }
+            if (dts == 365) {
+                System.out.println("Необходимо пройти ТО(1 год)");
+            }
         }
     }
 
